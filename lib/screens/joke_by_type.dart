@@ -5,7 +5,7 @@ import '../services/api_services.dart';
 class JokesByType extends StatelessWidget {
   final String type;
 
-  JokesByType({required this.type});
+  const JokesByType({super.key, required this.type});
 
   @override
   Widget build(BuildContext context) {

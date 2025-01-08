@@ -4,17 +4,17 @@ class JokeCard extends StatelessWidget {
   final String title;
   final VoidCallback onTap;
 
-  JokeCard({required this.title, required this.onTap});
+  const JokeCard({super.key, required this.title, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.all(16.0), 
+      margin: const EdgeInsets.all(16.0), 
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.0),
       ),
       elevation: 5, 
-      color: Colors.green[50],
+      color: const Color.fromARGB(255, 234, 232, 245),
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(15.0), 
@@ -26,7 +26,7 @@ class JokeCard extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24, 
                 fontWeight: FontWeight.bold, 
-                color: Colors.green[800], 
+                color: const Color.fromARGB(255, 87, 46, 125), 
               ),
               textAlign: TextAlign.center, 
             ),

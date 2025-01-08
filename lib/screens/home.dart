@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../services/api_services.dart';
-import '../widgets/joke_card.dart';
 import 'joke_by_type.dart';
 
 class Home extends StatefulWidget {
@@ -86,7 +85,7 @@ class _HomeState extends State<Home> {
                         padding: const EdgeInsets.all(20),
                         child: Row(
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.comment,
                               size: 30,
                               color: Colors.deepPurpleAccent,

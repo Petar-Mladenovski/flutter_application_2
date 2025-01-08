@@ -3,6 +3,8 @@ import '../models/joke.dart';
 import '../services/api_services.dart';
 
 class RandomJoke extends StatelessWidget {
+  const RandomJoke({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

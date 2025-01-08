@@ -3,6 +3,7 @@ class Joke {
   final String type;
   final String setup;
   final String punchline;
+  bool isFavorite = false;
 
   Joke({
     required this.id,
